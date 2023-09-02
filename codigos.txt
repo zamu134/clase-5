@@ -118,3 +118,20 @@ using System.Xml.Linq;
 //var list = new List<int?>(); /*empty list*/
 //double? result = list.Average(); //suma: null
 //Console.WriteLine(result);
+
+//----------------------------------------
+
+//Func<int, int> square = x => x * x;
+//Console.WriteLine(square(5));
+////Output: 
+////25
+
+int[] nums = { 3, 4, 5, 6, 4, 5, 7 };
+var numMayores =nums.Where(n => n > 5).ToList();
+var numPares = nums.Where(n => n % 2 ==0).ToList();
+var numImapares = nums.Where(n => n % 2 != 0).ToList();
+
+foreach (var i in numMayores)
+{
+    Console.WriteLine(i);
+}
